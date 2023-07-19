@@ -13,6 +13,11 @@
 		CC1A6DAA2A62EF1F0006ECFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A6DA82A62EF1F0006ECFA /* Main.storyboard */; };
 		CC1A6DAC2A62EF200006ECFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1A6DAB2A62EF200006ECFA /* Assets.xcassets */; };
 		CC1A6DAF2A62EF200006ECFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A6DAD2A62EF200006ECFA /* LaunchScreen.storyboard */; };
+		CCA389702A62F8E500EE390E /* TemperatureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3896F2A62F8E500EE390E /* TemperatureService.swift */; };
+		CCA389732A62F97300EE390E /* TemperatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA389722A62F97300EE390E /* TemperatureInfo.swift */; };
+		CCA389752A62FACD00EE390E /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA389742A62FACD00EE390E /* APIKeys.swift */; };
+		CCA389772A63052700EE390E /* Coordinats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA389762A63052700EE390E /* Coordinats.swift */; };
+		CCA389792A648DE400EE390E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA389782A648DE400EE390E /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CC1A6DAB2A62EF200006ECFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1A6DAE2A62EF200006ECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC1A6DB02A62EF200006ECFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA3896F2A62F8E500EE390E /* TemperatureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureService.swift; sourceTree = "<group>"; };
+		CCA389722A62F97300EE390E /* TemperatureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureInfo.swift; sourceTree = "<group>"; };
+		CCA389742A62FACD00EE390E /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		CCA389762A63052700EE390E /* Coordinats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinats.swift; sourceTree = "<group>"; };
+		CCA389782A648DE400EE390E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		CC1A6DA12A62EF1F0006ECFA /* weatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				CCA389712A62F95100EE390E /* Model */,
+				CCA3896E2A62F89500EE390E /* network */,
 				CC1A6DA22A62EF1F0006ECFA /* AppDelegate.swift */,
 				CC1A6DA42A62EF1F0006ECFA /* SceneDelegate.swift */,
 				CC1A6DA62A62EF1F0006ECFA /* ViewController.swift */,
@@ -65,6 +77,25 @@
 				CC1A6DB02A62EF200006ECFA /* Info.plist */,
 			);
 			path = weatherApp;
+			sourceTree = "<group>";
+		};
+		CCA3896E2A62F89500EE390E /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CCA3896F2A62F8E500EE390E /* TemperatureService.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		CCA389712A62F95100EE390E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCA389722A62F97300EE390E /* TemperatureInfo.swift */,
+				CCA389742A62FACD00EE390E /* APIKeys.swift */,
+				CCA389762A63052700EE390E /* Coordinats.swift */,
+				CCA389782A648DE400EE390E /* Error.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA389792A648DE400EE390E /* Error.swift in Sources */,
+				CCA389772A63052700EE390E /* Coordinats.swift in Sources */,
+				CCA389752A62FACD00EE390E /* APIKeys.swift in Sources */,
 				CC1A6DA72A62EF1F0006ECFA /* ViewController.swift in Sources */,
+				CCA389732A62F97300EE390E /* TemperatureInfo.swift in Sources */,
 				CC1A6DA32A62EF1F0006ECFA /* AppDelegate.swift in Sources */,
+				CCA389702A62F8E500EE390E /* TemperatureService.swift in Sources */,
 				CC1A6DA52A62EF1F0006ECFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
